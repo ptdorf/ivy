@@ -26,7 +26,7 @@ recursive-include ivy/ext *
 
 # Write a temporary MANIFEST.in file alongside the setup.py file.
 manpath = os.path.join(os.path.dirname(__file__), 'MANIFEST.in')
-with io.open(manpath, 'w', encoding='utf-8') as manfile:
+with io.open(manpath, 'wb', encoding='utf-8') as manfile:
     manfile.write(manifest)
 
 
